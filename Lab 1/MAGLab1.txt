@@ -1,0 +1,549 @@
+Script started on Tue 27 Oct 2015 11:31:02 AM EDT
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ chmod [K[K[K[K[K[Kless src [K/echo.bash
+[?1049h[?1h=#! /bin/bash
+#  Echo Program
+#  by Stuart C. Shapiro
+#
+#  To demonstrate the writing and running of a bash shell script.
+#
+#  Store this script in a file named echo.bash
+#
+#  To run this program:
+#    1. Type chmod 700 echo.bash
+#            to make echo.bash executable
+#    2. Type ./echo.bash
+#
+#    Repeats the following:
+#      print a numbered prompt;
+#      read something;
+#      echo 'I read --><whatever was read><--'
+#    until the thing read is the symbol bye.
+
+printf "\nBash Echo\nType something to each prompt. \nType bye to quit.\n\n"
+n=1
+while ((1))
+ do { read -p "$n:  " input
+     if [ "$input" = "bye" ]
+     then
+        printf "Good bye.\n"
+        exit
+    else
+        printf "I read -->$input<--\n"
+    fi
+    let n=n+1; }
+done
+
+[7msrc/echo.bash (END)[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ chmod 700 src/echo.bash
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ src/echo.bash
+
+Bash Echo
+Type something to each prompt. 
+Type bye to quit.
+
+1:  blah
+I read -->blah<--
+2:  bye
+Good bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ less src/echo.c
+[?1049h[?1h=/*
+*  Echo Program
+*  by Stuart C. Shapiro
+*
+*  To demonstrate the writing and running of a C program.
+*
+*  Store this program in a file named echo.c
+*
+*  To run this program:
+*    1. Type  cc -o echo echo.c
+*         or gcc -Wall -o echo echo.c
+*    2. Type ./echo
+*
+*    Repeats the following:
+*      print a numbered prompt;
+*      read something;
+*      echo 'I read --><whatever was read><--'
+*    until the thing read is the symbol bye.
+*/
+
+#include <stdio.h>
+
+int strcmp(const char* s1, const char* s2);
+
+int main()
+{
+
+  int n;
+  char str[80];
+
+  printf("\nC Echo\nType something to each prompt. \nType bye to quit.\n\n");
+
+  for (n = 1; ; n++) {
+    printf("%2d: ", n);
+    scanf("%s", str);
+    if (strcmp(str, "bye")==0) {
+      printf("Good bye.\n");
+      return 0;
+    }
+    else 
+      {printf("I read -->%s<--\n",str);}
+
+  }
+}
+
+[7msrc/echo.c (END)[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ gcc -Wall -o e[Kbiin[K[Km [K[Kn/echoC src/echo.c
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ bin/echoC
+
+C Echo
+Type something to each prompt. 
+Type bye to quit.
+
+ 1: blah
+I read -->blah<--
+ 2: bye
+Good bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ clisp -c echo[K[K[K[Ksrc/echo.cl
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+;; Compiling file /home/gattim/Source/Repos/CSC 351/Lab 1/src/echo.cl ...
+WARNING: LOOP: FOR clauses should occur before the loop's main body
+;; Wrote file /home/gattim/Source/Repos/CSC 351/Lab 1/src/echo.fas
+0 errors, 1 warning
+Bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ clisp -c src/echo.cl[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksrc/echo.fas
+bash: src/echo.fas: Permission denied
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ cls[Kisp src/echo.gas[K[K[Kfas
+
+Common Lisp Echo
+Type something to each prompt.
+Type `bye' to quit.
+1:  blah
+I read -->blah<--
+2:  bye
+Good bye.
+
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ les src/[K[K[K[K[Ks/[K src/echo.co[Kpp
+[?1049h[?1h=/*
+*  Echo Program
+*  by Stuart C. Shapiro
+*
+*  To demonstrate the writing and running of a C++ program.
+*
+*  Store this program in a file named echo.cpp
+*
+*  To run this program:
+*    1. Type g++ -Wall -o echo echo.cpp
+*    2. Type ./echo
+*
+*    Repeats the following:
+*      print a numbered prompt;
+*      read something;
+*      echo 'I read --><whatever was read><--'
+*    until the thing read is the symbol bye.
+*/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// int strcmp(const char* s1, const char* s2);
+
+int main()
+{
+
+  int n;
+  std::string str;
+
+  cout << "\nC++ Echo\nType something to each prompt. \nType bye to quit.\n";
+
+  for (n = 1; ; n++) {
+    cout << n <<": ";
+    cin >> str;
+   // if (strcmp(str, "bye")==0) {
+    if (str.compare("bye") == 0) {
+      cout << "Good bye.\n";
+      return 0;
+    }
+    else 
+      cout << "I read -->" << str << "<--\n";
+  }
+}
+
+[7msrc/echo.cpp (END)[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ g++ -Wall -o bin/echoC{[KPP src/echo.cpp
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ bin/echoCPP
+
+C++ Echo
+Type something to each prompt. 
+Type bye to quit.
+1: blah
+I read -->blah<--
+2: bye
+Good bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ less src/echo.java
+src/echo.java: No such file or directory
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ less src/echo.java[K[K[K[K[K[K[K[K[KW[KEcho.java
+[?1049h[?1h=import java.io.*;
+
+/**
+ * <code>Echo</code>
+ *
+ * To demonstrate the writing and running of a Java program.
+ *
+ * Store this program in a file named Echo.java
+ *
+ * To run this program:
+ *     1.  javac Echo.java
+ *     2.  java Echo
+ *
+ * @author <a href="mailto:shapiro@cse.buffalo.edu">Stuart C. Shapiro</a> 
+ */
+public class Echo {
+   
+    /**
+     *   Repeats the following:
+     *     print a numbered prompt;
+     *     read something;
+     *     echo `I read --><whatever was read><--'
+     *   until the thing read is the string "bye".
+     *
+     * @param args a <code>String[]</code> value
+     */
+    public static void main(String[] args) {
+        String input;
+        System.out.println("Java Echo");
+        System.out.println("Type something to each prompt.");
+        System.out.println("Type bye to quit.\n");
+        for (int n = 1; ; n++) {
+            System.out.print(n + ": ");
+            input = readString();
+            if (input.equals("bye")) {
+                System.out.println("Good bye.");
+                System.exit(0);
+            }
+            else {System.out.println("I read -->" + input + "<--");}
+        }
+    }
+
+    /**
+     * Reads a line of text, and returns it as a string.
+     *
+     * @return the <code>String</code> it read,
+     * or the string "bye" if any exception occurs when reading.
+     */
+    public static String readString() {
+        String input;
+        BufferedReader reader
+            = new BufferedReader(new InputStreamReader(System.in));
+        try {input = reader.readLine().trim();}
+        catch(Exception e) {input = "bye";}
+        return input;
+    }
+[7msrc/Echo.java[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ javac -o bin/e[KEchoJA[Kava [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kjavac d[K-d bin Echo.java
+javac: file not found: Echo.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ javac -d bin Echo.javasEcho.javarEcho.javacEcho.javacEcho.java/Echo.java[1P/Echo.java
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ java -cp bin/Echo
+Usage: java [-options] class [args...]
+           (to execute a class)
+   or  java [-options] -jar jarfile [args...]
+           (to execute a jar file)
+where options include:
+    -d32	  use a 32-bit data model if available
+    -d64	  use a 64-bit data model if available
+    -server	  to select the "server" VM
+                  The default VM is server,
+                  because you are running on a server-class machine.
+
+
+    -cp <class search path of directories and zip/jar files>
+    -classpath <class search path of directories and zip/jar files>
+                  A : separated list of directories, JAR archives,
+                  and ZIP archives to search for class files.
+    -D<name>=<value>
+                  set a system property
+    -verbose:[class|gc|jni]
+                  enable verbose output
+    -version      print product version and exit
+    -version:<value>
+                  Warning: this feature is deprecated and will be removed
+                  in a future release.
+                  require the specified version to run
+    -showversion  print product version and continue
+    -jre-restrict-search | -no-jre-restrict-search
+                  Warning: this feature is deprecated and will be removed
+                  in a future release.
+                  include/exclude user private JREs in the version search
+    -? -help      print this help message
+    -X            print help on non-standard options
+    -ea[:<packagename>...|:<classname>]
+    -enableassertions[:<packagename>...|:<classname>]
+                  enable assertions with specified granularity
+    -da[:<packagename>...|:<classname>]
+    -disableassertions[:<packagename>...|:<classname>]
+                  disable assertions with specified granularity
+    -esa | -enablesystemassertions
+                  enable system assertions
+    -dsa | -disablesystemassertions
+                  disable system assertions
+    -agentlib:<libname>[=<options>]
+                  load native agent library <libname>, e.g. -agentlib:hprof
+                  see also, -agentlib:jdwp=help and -agentlib:hprof=help
+    -agentpath:<pathname>[=<options>]
+                  load native agent library by full pathname
+    -javaagent:<jarpath>[=<options>]
+                  load Java programming language agent, see java.lang.instrument
+    -splash:<imagepath>
+                  show splash screen with specified image
+See http://www.oracle.com/technetwork/java/javase/documentation/index.html for more details.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ java -cp bin/Echo[C[1PEcho Echo
+Java Echo
+Type something to each prompt.
+Type bye to quit.
+
+1: blah
+I read -->blah<--
+2: bye
+Good bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ less src/echo.pl
+[?1049h[?1h=#! /usr/bin/perl
+
+#  Echo Program
+#  by Stuart C. Shapiro
+#  edited by Debra T. Burhans for perl on ptolemy@canisius
+#
+#  To demonstrate the writing and running of a Perl program.
+#
+#  Store this program in a file named echo.pl
+#
+#  To run this program:
+#    1. Type chmod 700 echo.pl
+#            to make echo.pl executable
+#    2. Type ./echo.pl
+#
+#    Repeats the following:
+#      print a numbered prompt;
+#      read something;
+#      echo 'I read --><whatever was read><--'
+#    until the thing read is the symbol bye.
+
+print "Perl Echo\nType something to each prompt.\nType `bye' to quit.\n\n";
+
+for ($n=1; ; $n++) {
+  print "$n: ";
+  $input = <STDIN>;
+  chomp($input);
+  if ($input eq "bye") {
+    print "Good bye.\n";
+    last;}
+  print "I read -->$input<--\n";
+}
+
+[7msrc/echo.pl (END)[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ chmod 700 src/echo.pl
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ src [K/echo.pl
+Perl Echo
+Type something to each prompt.
+Type `bye' to quit.
+
+1: blah
+I read -->blah<--
+2: buy  ye
+Good bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ less src/echo.pro
+[?1049h[?1h=%
+%  Echo Program
+%  by Stuart C. Shapiro
+%  edited by Debra T. Burhans to accomodate gprolog and lack of
+%  I/O utilities
+%
+%  To demonstrate the writing and running of a recursive Prolog program.
+%
+%  Store this program in a file named echo.pro
+%
+%
+%  To run this program from inside the prolog interpreter:
+%    1. Type: gprolog
+%       you will be inside the prolog interpreter
+%       see if you can compile and run this from the command prompt
+%       otherwise just follow these directions
+%
+%    2.  Type:  ['echo.pro'].
+%
+%    3.  Type: echo.
+%    Repeats the following:
+%      print a numbered prompt;
+%      read something;
+%      echo 'I read --><whatever was read><--'
+%    until the thing read is the symbol bye.
+%
+%    Type whatever you want at the numbered prompt 
+%      and bye to quit
+%
+%
+%  To create an executable file you can run from the command line:
+%       1.  Type:  gplc echo.pro
+%
+%       2.  Type:  ./echo
+%
+%       3.  Type: echo.
+
+%       NOTE: when you run the executable it puts you into the prolog
+%       interpreter, so to get the ball rolling you need to start the 
+%       ball rolling by invoking the echo function as in the other
+%       directions.  In other prologs you might not end up in the 
+%       prolog interpreter.
+%
+%      Repeats the following:
+%      print a numbered prompt;
+%      read something;
+%      echo 'I read --><whatever was read><--'
+%    
+%       until the thing read is the symbol bye.
+%
+%      Type whatever you want at the numbered prompt 
+%      and bye to quit
+%
+
+echo :- format("Prolog Echo~n",[]),
+        format("Type something to each prompt.~nType bye to quit.~2n", []),
+[7msrc/echo.pro[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ cd src
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1/srcgattim@Sonya:~/Source/Repos/CSC 351/Lab 1/src$ gprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['echo.pro']['echo.pro']
+.
+compiling /home/gattim/Source/Repos/CSC 351/Lab 1/src/echo.pro for byte code...
+/home/gattim/Source/Repos/CSC 351/Lab 1/src/echo.pro:85: warning: unknown directive echo/0 - maybe use initialization/1 - directive ignored
+/home/gattim/Source/Repos/CSC 351/Lab 1/src/echo.pro compiled, 85 lines read - 8027 bytes written, 14 ms
+
+yes
+| ?- echo
+blah    .
+Prolog Echo
+Type something to each prompt.
+Type bye to quit.
+
+1: blah
+I read -->blah<--
+2: bye
+Good bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1/srcgattim@Sonya:~/Source/Repos/CSC 351/Lab 1/src$ less src/echo.py
+src/echo.py: No such file or directory
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1/srcgattim@Sonya:~/Source/Repos/CSC 351/Lab 1/src$ cd ..
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ cd ..less src/echo.py
+[?1049h[?1h=#! /usr/bin/python
+
+#  Echo Program
+#  by Stuart C. Shapiro
+#
+#  To demonstrate the writing and running of a Python program.
+#
+#  Store this program in a file named echo.py
+#
+#  To run this program:
+#    1. Type chmod 700 echo.py
+#            to make echo.py executable
+#    2. Type ./echo.py
+#  Or you needn't include the "shebang" line at the top
+#     and you needn't make echo.py executable
+#     Just type python echo.py
+#
+#    Repeats the following:
+#      print a numbered prompt;
+#      read something;
+#      echo 'I read --><whatever was read><--'
+#    until the thing read is the symbol bye.
+
+def echo():
+    print "Python Echo\nType something to each prompt.\nType `bye' to quit.\n\n";
+    n = 1
+    while True:
+        input = raw_input(str(n) + ":  ")
+        if input == "bye": break
+        print "I read -->" + input + "<--\n"
+        n += 1
+    print "Good bye.\n"
+
+echo()
+
+[7msrc/echo.py (END)[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ pyto[Khon src/echo.py
+Python Echo
+Type something to each prompt.
+Type `bye' to quit.
+
+
+1:  blah
+I read -->blah<--
+
+2:  bye
+Good bye.
+
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ less src/echo.rb
+[?1049h[?1h==begin
+  Echo Program
+  by Stuart C. Shapiro
+  To demonstrate the writing and running of a Ruby program.
+  To run this program:
+    Typy ruby echo.rb
+
+  Repeats the following:
+    print a numbered prompt;
+    read something;
+    echo 'I read --><whatever was read><--'
+  until the thing read is the symbol bye.
+=end
+
+def echo()
+  puts "Ruby Echo"
+  puts "Type something to each prompt."
+  puts "Type bye to quit.\n\n"
+  n = 1
+  while true
+    print "#{n}: "
+    input = gets.chomp
+    if input == "bye"
+      break
+    end
+    puts "I read -->#{input}<--"
+    n += 1
+  end
+  puts "Good bye."
+end
+
+echo()
+
+[7msrc/echo.rb (END)[27m[K[K[?1l>[?1049l]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ ruby src/echo.rb
+Ruby Echo
+Type something to each prompt.
+Type bye to quit.
+
+1: blahj 
+I read -->blah<--
+2: bye
+Good bye.
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ gnome-open ~[Kresources/CSC351Lab1.pdf 
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ ps
+  PID TTY          TIME CMD
+ 2488 pts/1    00:00:00 bash
+ 2794 pts/1    00:00:00 evince
+ 2821 pts/1    00:00:00 ps
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 1gattim@Sonya:~/Source/Repos/CSC 351/Lab 1$ exit
+
+Script done on Tue 27 Oct 2015 11:51:55 AM EDT

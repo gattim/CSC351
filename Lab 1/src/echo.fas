@@ -1,0 +1,45 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 14 (IN-PACKAGE :COMMON-LISP-USER)-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 31 F6 0F 01 19 01)
+   ("COMMON-LISP-USER" |COMMON-LISP|::|*PACKAGE*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|16 28 (DEFUN ECHO NIL ...)-2|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|ECHO| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|ECHO|
+       #58Y(00 00 00 00 00 00 00 00 26 01 01 02 DA 6B 01 33 01 15 38 04 80 82
+            01 C7 F8 1B 0F DE 6B 01 AF AF 33 03 15 38 04 80 82 01 85 00 AD DD
+            38 04 8D 35 6A DF 6B 01 33 01 15 00 19 03)
+       (#Y(|COMMON-LISP-USER|::|ECHO-1|
+           #22Y(00 00 00 00 01 00 00 00 21 17 AE 31 98 DA AF 38 02 31 95 9E 19
+                03)
+           ("\n
+Common Lisp Echo\n
+Type something to each prompt.\n
+Type `bye' to quit.\n
+1:  ")
+           (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+        |COMMON-LISP|::|*STANDARD-OUTPUT*| 2. "bye"
+        #Y(|COMMON-LISP-USER|::|ECHO-2|
+           #39Y(00 00 00 00 03 00 00 00 21 19 DA B1 38 02 31 95 AF B1 31 90 DB
+                B1 38 02 31 95 AE B1 31 90 DC B1 38 02 31 95 9E 19 05)
+           ("I read -->" "<--\n" ":  ")
+           (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+        #Y(|COMMON-LISP-USER|::|ECHO-3|
+           #19Y(00 00 00 00 01 00 00 00 21 17 DA AF 38 02 31 95 9E 19 03)
+           ("Good bye.\n\n")
+           (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)))
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       "Repeats the following:\n
+     print a numbered prompt;\n
+     read something;\n
+     echo `I read --><whatever was read><--'\n
+   until the thing read is the symbol bye."
+       1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|30 30 (ECHO)-3| #14Y(00 00 00 00 00 00 00 00 20 01 2E 00 19 01)
+   (|COMMON-LISP-USER|::|ECHO|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|31 31 (EXIT)-4| #14Y(00 00 00 00 00 00 00 00 20 01 2E 00 19 01)
+   (|EXT|::|EXIT|) (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
