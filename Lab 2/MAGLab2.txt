@@ -1,0 +1,172 @@
+Script started on Wed 28 Oct 2015 04:58:10 PM EDT
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 2gattim@Sonya:~/Source/Repos/CSC 351/Lab 2$ kill 4454[Kkill 4454ps[Kruby[2Ppskill 4454[Kirb
+irb(main):001:0> properties = ['object oriented', 'duck typed', 'productive', 'fun']
+=> ["object oriented", "duck typed", "productive", "fun"]
+irb(main):002:0> properties.each{|property| puts "Ruby is #{property}."}
+Ruby is object oriented.
+Ruby is duck typed.
+Ruby is productive.
+Ruby is fun.
+=> ["object oriented", "duck typed", "productive", "fun"]
+irb(main):003:0> puts 'hello, world'
+hello, world
+=> nil
+irb(main):004:0> language = 'Ruby'
+=> "Ruby"
+irb(main):005:0> puts :[K"hello; #{language}"
+hello; Ruby
+=> nil
+irb(main):006:0> language = 'my rUB[K[K[KRuby'
+=> "my Ruby"
+irb(main):007:0> puts "hello, #{language}"
+hello, my Ruby
+=> nil
+irb(main):008:0> 4
+=> 4
+irb(main):009:0> 4.class
+=> Fixnum
+irb(main):010:0> 4 + 4
+=> 8
+irb(main):011:0> 4.methio[K[Kods
+=> [:to_s, :-@, :+, :-, :*, :/, :div, :%, :modulo, :divmod, :fdiv, :**, :abs, :magnitude, :==, :===, :<=>, :>, :>=, :<, :<=, :~, :&, :|, :^, :[], :<<, :>>, :to_f, :size, :zero?, :odd?, :even?, :succ, :integer?, :upto, :downto, :times, :next, :pred, :chr, :ord, :to_i, :to_int, :floor, :ceil, :truncate, :round, :gcd, :lcm, :gcdlcm, :numerator, :denominator, :to_r, :rationalize, :singleton_method_added, :coerce, :i, :+@, :eql?, :quo, :remainder, :real?, :nonzero?, :step, :to_c, :real, :imaginary, :imag, :abs2, :arg, :angle, :phase, :rectangular, :rect, :polar, :conjugate, :conj, :between?, :nil?, :=~, :!~, :hash, :class, :singleton_class, :clone, :dup, :initialize_dup, :initialize_clone, :taint, :tainted?, :untaint, :untrust, :untrusted?, :trust, :freeze, :frozen?, :inspect, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :instance_of?, :kind_of?, :is_a?, :tap, :send, :public_send, :respond_to?, :respond_to_missing?, :extend, :display, :method, :public_method, :define_singleton_method, :object_id, :to_enum, :enum_for, :equal?, :!, :!=, :instance_eval, :instance_exec, :__send__, :__id__]
+irb(main):012:0> x = 4
+=> 4
+irb(main):013:0> x < 5
+=> true
+irb(main):014:0> x <= 4
+=> true
+irb(main):015:0> x > 4
+=> false
+irb(main):016:0> fa;se[K[K[Klse.class
+=> FalseClass
+irb(main):017:0> true.cal[K[Klass
+=> TrueClass
+irb(main):018:0> x -[K= 4
+=> 4
+irb(main):019:0> puts 'This appears to be false.' unless x == 4
+=> nil
+irb(main):020:0> puts 'This appears to be false.' unless x == 4[1P[1P[1P[1P[1P[1@t[1@r[1@u[1@e[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1@i[1@f
+This appears to be true.
+=> nil
+irb(main):021:0> if x == 4
+irb(main):022:1>    puts 'THis [K[K[K[Khis appears to be true.'
+irb(main):023:1> end
+This appears to be true.
+=> nil
+irb(main):024:0> unless x == 4
+irb(main):025:1>    pi[Kuts 'This appears to be false'.'
+irb(main):026:1> end
+=> nil
+irb(main):027:0> end   puts 'This appears to be false.'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Punless x == 4
+irb(main):028:1> unless x == 4[Kunless x == 4end[K   puts 'This appears to be false.'
+irb(main):029:1> else
+irb(main):030:1*    puts 'This appears to be True'.'
+irb(main):031:1> end
+This appears to be True.
+=> nil
+irb(main):032:0> puts 'This appears to be true.' if not true
+=> nil
+irb(main):033:0> puts 'This appears to be true.' if !true
+=> nil
+irb(main):034:0> x = x + 1 while x < 10
+=> nil
+irb(main):035:0> x
+=> 10
+irb(main):036:0> x = x -1[K 1 until x == 1
+=> nil
+irb(main):037:0> x
+=> 1
+irb(main):038:0> while x < 10
+irb(main):039:1>    x = x + 1
+irb(main):040:1>    puts x
+irb(main):041:1> end
+2
+3
+4
+5
+6
+7
+8
+9
+10
+=> nil
+irb(main):042:0> puta '[K[K[Ks 'THis appears to be true.' if 1
+THis appears to be true.
+=> nil
+irb(main):043:0> puts 'THis appears to be true.' if 1[1P[1@h[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'rab[Kndom string'
+(irb):43: warning: string literal in condition
+This appears to be true.
+=> nil
+irb(main):044:0> puts 'This appears to be true.' if 'random string'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K0
+This appears to be true.
+=> nil
+irb(main):045:0> puts 'This appears to be true.' if 0[Ktrue
+This appears to be true.
+=> nil
+irb(main):046:0> puts 'This appears to be true.' if true[K[K[K[Kfalse
+=> nil
+irb(main):047:0> puts 'This appears to be true.' if false[K[K[K[K[Knil
+=> nil
+irb(main):048:0> true and false
+=> false
+irb(main):049:0> true or false
+=> true
+irb(main):050:0> false && false
+=> false
+irb(main):051:0> true && this [K_will_cause [K_an_error
+NameError: undefined local variable or method `this_will_cause_an_error' for main:Object
+	from (irb):51
+	from /usr/bin/irb:12:in `<main>'
+irb(main):052:0> false[K[K[K[K[Ktrue && this_will_cause_an_error[1P[1P[1P[1P[1@f[1@a[1@l[1@s[1@e
+=> false
+irb(main):053:0> false && this_will_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ptru[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cncause_an_errorocause_an_errortcause_an_error_cause_an_error[1P this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+=> true
+irb(main):054:0> true or this_will_not_cause_an_error[C[1P this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+=> true
+irb(main):055:0> true || this_will_not_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cor[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pfalse && this_will_cause_an_error[1Ptru[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P this_will_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P this_will_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| this_will_cause_an_error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+NameError: undefined local variable or method `this_will_cause_an_error' for main:Object
+	from (irb):55
+	from /usr/bin/irb:12:in `<main>'
+irb(main):056:0> true | false
+=> true
+irb(main):057:0> 4 + 'four;[K'
+TypeError: String can't be coerced into Fixnum
+	from (irb):57:in `+'
+	from (irb):57
+	from /usr/bin/irb:12:in `<main>'
+irb(main):058:0> 4.class
+=> Fixnum
+irb(main):059:0> (4.0).class
+=> Float
+irb(main):060:0> 4 + 4.0
+=> 8.0
+irb(main):061:0> def add)r[K[K_them_ip[K[Kup
+irb(main):062:1>    4 + 'four'
+irb(main):063:1> end
+=> nil
+irb(main):064:0> add_them_up
+TypeError: String can't be coerced into Fixnum
+	from (irb):62:in `+'
+	from (irb):62:in `add_them_up'
+	from (irb):64
+	from /usr/bin/irb:12:in `<main>'
+irb(main):065:0> i = 0
+=> 0
+irb(main):066:0> a = ['100, 100.0'[K[1@'[C[C[C[C[C[C[C]
+=> ["100", 100.0]
+irb(main):067:0> while i < 2 [K
+irb(main):068:1> p[K   puts a[i].to_i
+irb(main):069:1>    i = i + 1
+irb(main):070:1> end
+100
+100
+=> nil
+irb(main):071:0> puts "[K'Hello, world.'
+Hello, world.
+=> nil
+irb(main):072:0> "[K"Hello, Ruby.".index("Ruby")
+=> 7
+irb(main):073:0> exit
+]0;gattim@Sonya: ~/Source/Repos/CSC 351/Lab 2gattim@Sonya:~/Source/Repos/CSC 351/Lab 2$ exit
+
+Script done on Wed 28 Oct 2015 05:40:00 PM EDT
