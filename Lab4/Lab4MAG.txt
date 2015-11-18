@@ -1,0 +1,569 @@
+Script started on Tue 17 Nov 2015 11:48:29 PM EST
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4gattim@Sonya:~/Source/Repos/CSC351/Lab4$ cd src
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ swipl
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.4)
+Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ['firn[K[K[Kriends.pro'].
+[32m% friends.pro compiled 0.00 sec, 5 clauses
+[0m[1mtrue.[0m
+
+?- likes(wallace, sheep)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[1;31mfalse.[0m
+
+?- likes(grommit, cheese)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[1mtrue.[0m
+
+?- friend(wallace, wallace)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[1;31mfalse.[0m
+
+?- friend(grommit, wallace)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[1mtrue.[0m
+
+?- friend(wallace, grommit)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[1mtrue.[0m
+
+?- friend(wendolene, grommit)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[1;31mfalse.[0m
+
+?- 
+[32m% halt
+[0m]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ ps
+  PID TTY          TIME CMD
+ 8398 pts/4    00:00:00 bash
+ 8420 pts/4    00:00:00 ps
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl food.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ swipl
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.4)
+Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [food.[K[K[K[K[K'food.pro'].
+[32m% food.pro compiled 0.00 sec, 12 clauses
+[0m[1mtrue.[0m
+
+?- food_type(What, meat)[C[C[C[C[C[C[C[C[C[C[C[C.
+What = spam 
+
+Actions:
+
+; (n, r, space, TAB): redo    t:          trace & redo
+b:                    break   c (a, RET): exit
+w:                    write   p           print
+h (?):                help
+
+Action? [1m;[0m
+What = sausage.
+
+?- What = sausage[K[K[K[K[K[K[K[K[K[K[K[K[K[KWHat = sausage ? ;
+|    
+|    ;
+|    food_type(What, meat).[C[C[C[C[C[K.
+[31;1mERROR: Syntax error: Unexpected `;' before `.'
+ERROR: WHat = sausage ? ;
+
+; 
+ERROR: ** here **
+ERROR: . 
+[0m?- WHat = sausage ? ;
+
+;.[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khat[K[K[K[Kfood_type(Whatm[K, meat)[C[C[C[C[C[C[C[C[C[C[C[C.
+What = spam [1m.[0m
+
+?- food_type(What, meat).
+What = spam [1m;[0m
+What = sausage.
+
+?- food_flavor(sausage, sweet)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[1;31mfalse.[0m
+
+?- flavor(sweet, What)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+What = dessert [1m;[0m
+What = soda.
+
+?- 
+[32m% halt
+[0m]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl map.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ swipl
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.4)
+Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- colo[K[K[K[K['map.pro'].
+[31mWarning: /home/gattim/Source/Repos/CSC351/Lab4/src/map.pro:5:
+	Singleton variables: [Gerogia]
+[0m[32m% map.pro compiled 0.00 sec, 8 clauses
+[0m[1mtrue.[0m
+
+?- 
+[32m% halt
+[0m]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ swiplubl map.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl map.pro [8Pwipl
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.4)
+Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ['map.pro'].
+[32m% map.pro compiled 0.00 sec, 8 clauses
+[0m[1mtrue.[0m
+
+?- coloring(Alabama, Mississippi, Georgia, Tennessee, Florida)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+Alabama = blue,
+Mississippi = Georgia, Georgia = red,
+Tennessee = Florida, Florida = green [1m.[0m
+
+?- coloring(Alabama, Mississippi, Georgia, Tennessee, Florida).[C[C[C['map.pro'].[K[C[C[Ccoloring(Alabama, Mississippi, Georgia, Tennessee, Florida).[C[C[C['map.pro'].[K[C[C[Ccoloring(Alabama, Mississippi, Georgia, Tennessee, Florida).[C[C[C[K
+[32m% halt
+[0m]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ swiplubl map.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl map.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['map.pro']['map.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/map.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/map.pro compiled, 12 lines read - 1767 bytes written, 9 ms
+
+yes
+| ?- coloring(Alabama, Mississippi, Georgia, Tennessee, Florida)(Alabama, Mississippi, Georgia, Tennessee, Florida).
+
+Alabama = blue
+Florida = green
+Georgia = red
+Mississippi = red
+Tennessee = green ? 
+
+yes
+| ?- coloring(Alabama, Mississippi, Georgia, Tennessee, Florida).
+
+Alabama = blue
+Florida = green
+Georgia = red
+Mississippi = red
+Tennessee = green ? a
+
+Alabama = green
+Florida = blue
+Georgia = red
+Mississippi = red
+Tennessee = blue
+
+Alabama = blue
+Florida = red
+Georgia = green
+Mississippi = green
+Tennessee = red
+
+Alabama = red
+Florida = blue
+Georgia = green
+Mississippi = green
+Tennessee = blue
+
+Alabama = green
+Florida = red
+Georgia = blue
+Mississippi = blue
+Tennessee = red
+
+Alabama = red
+Florida = green
+Georgia = blue
+Mississippi = blue
+Tennessee = green
+
+(4 ms) no
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl ohmy.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- on  ['ohmy.pro']['ohmy.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/ohmy.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/ohmy.pro:4:10: syntax error: , or ) expected
+	1 error(s)
+compilation failed
+
+no
+| ?- ['ohmy.pro'].             
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ ps
+  PID TTY          TIME CMD
+ 8398 pts/4    00:00:00 bash
+ 8548 pts/4    00:00:00 ps
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl ohmy.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl ohmy.pro ps[Krolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['ohmy.pro']['ohmy.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/ohmy.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/ohmy.pro compiled, 4 lines read - 798 bytes written, 9 ms
+
+yes
+| ?- dorothy(lion, tiger, bear)(lion, tiger, bear).
+
+yes
+| ?- dorothy) (One, tw  W Twp o, Three)(One, Two, Three).
+
+One = lion
+Three = bear
+Two = tiger
+
+yes
+| ?- twin) _cats(One, Two)(One, Two).
+
+One = lion
+Two = lion ? ;
+
+One = lion
+Two = tiger ? a
+
+One = tiger
+Two = lion
+
+One = tiger
+Two = tiger
+
+yes
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl family.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl family.pro[9Pprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- [family.pro'family.profamily.pro']['family.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/family.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/family.pro compiled, 6 lines read - 842 bytes written, 9 ms
+
+(4 ms) yes
+| ?- ancestor(joh_boy_sr, john_boy_jr)(joh_boy_sr, john_boy_jr).
+
+no
+| ?- ancestor(joh_boy_sr, john_boy_jr).r, john_boy_jr). , john_boy_jr). , john_boy_jr). , john_boy_jr). , john_boy_jr). , john_boy_jr). , john_boy_jr). , john_boy_jr). , john_boy_jr). , john_boy_jr). z, john_boy_jr).e, john_boy_jr).b, john_boy_jr)., john_boy_jr).
+
+true ? a
+
+no
+| ?- ancestor(zeb, john_boy_jr).). ). ). ). ). ). ). ). ). ). ). W).h).o).).
+
+Who = john_boy_sr ? a
+
+Who = john_boy_jr
+
+no
+| ?- ancestor(zeb, Who).). ). ). ). ). ). ). ). W).h).o).,). ).j).o).h).n)._).b).o).y)._).j).r).).
+
+Who = john_boy_sr ? a
+
+Who = zeb
+
+(4 ms) no
+| ?- (1,2,3)(1,2,3) = (1,2,3)(1,2,3).
+
+yes
+| ?- (1,2,3) = (1,2,3).,).4).).
+
+no
+| ?- (1,2,3) = (1,2,3,4).(1,2,3) = (1,2,3).  ). ). ). ). ). 3).,).2).,).1).).
+
+no
+| ?- (1,2,3) = (3,2,1).(1,2,3) = (1,2,3,4).(1,2,3) = (1,2,3).  ) = (1,2,3). ) = (1,2,3). ) = (1,2,3). ) = (1,2,3). ) = (1,2,3). A) = (1,2,3).,) = (1,2,3).C) = (1,2,3).) = (1,2,3). B) = (1,2,3).,) = (1,2,3).C) = (1,2,3).) = (1,2,3).
+
+A = 1
+B = 2
+C = 3
+
+yes
+| ?- (A,B,C) = (1,2,3).(1,2,3) = (3,2,1).). ). ). ). ). A).,).B).,).C).).
+
+A = 1
+B = 2
+C = 3
+
+yes
+| ?- [1,2,3][1,2,3] = [][].1].,].2].,].3].].
+
+yes
+| ?- [1,2,3] = [1,2,3].,3]. ]. ]. ]. ]. X].,].Y].,].Z].].
+
+X = 1
+Y = 2
+Z = 3
+
+yes
+| ?- [1,2,3] = [X,Y,Z].,2,3] = [X,Y,Z]. 2,2,3] = [X,Y,Z].,2,3] = [X,Y,Z].
+
+X = 2
+Y = 2
+Z = 3
+
+yes
+| ?- [2,2,3] = [X,Y,Z].[1,2,3] = [X,Y,Z].,Y,Z]. X,Y,Z].,Y,Z]. X,Z].,Z].
+
+no
+| ?- [][] = [][]
+.
+
+yes
+| ?- [a,b,c][a,b,c] = [Head|Tail][Head|Tail].
+
+Head = a
+Tail = [b,c]
+
+yes
+| ?- [][] =    [a,b,c] = [Head|Tail].] = [Head|Tail]. ] = [Head|Tail]. ] = [Head|Tail]. ] = [Head|Tail]. ] = [Head|Tail]. ] = [Head|Tail].
+
+no
+| ?- [] = [Head|Tail].a] = [Head|Tail].] = [Head|Tail].
+
+Head = a
+Tail = []
+
+yes
+| ?- [a] = [Head|Tail].[] = [Head|Tail]. [a,b,c] = [Head|Tail].ad|Tail]. |Tail]. |Tail]. |Tail]. a|Tail].|Tail].
+
+Tail = [b,c]
+
+yes
+| ?- [a,b,c] = [a|Tail].[a] = [Head|Tail]. [] = [Head|Tail]. [a,b,c] = [Head|Tail].[aHead|Tail].|Head|Tail].[Head|Tail].Head|Tail]].[Head|Tail]].
+
+Head = b
+Tail = [c]
+
+yes
+| ?- [a,b,c,d,e][a,b,c,d,e] = [_,_|[Head|_][Head|_]][_,_|[Head|_]].
+
+Head = c
+
+yes
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl list_math.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl list_math.pro prolog[K
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['list_math.pro']['list_math.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/list_math.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/list_math.pro:2: warning: singleton variables [Head] for count/2
+/home/gattim/Source/Repos/CSC351/Lab4/src/list_math.pro compiled, 6 lines read - 1642 bytes written, 9 ms
+
+(4 ms) yes
+| ?- count(What, [1][1])(What, [1]).
+
+What = 1 ? 
+
+yes
+| ?- sum(0,[][])(0,[]).
+
+true ? a
+
+no
+| ?- sum(What, [1,2,3][1,2,3])(What, [1,2,3]).
+
+What = 6 ? 
+
+yes
+| ?- Averag      ag verage(What, [1,2,3][1,2,3])(What, [1,2,3]).
+
+What = 2.0 ? 
+
+yes
+| ?- append([oil][oil], wa  [water][water], [oil,water][oil,water])([oil], [water], [oil,water]).
+
+yes
+| ?- append([oil], [water], [oil,water]).]). ]). ]). ]). ]). s]).l]).i]).c]).k]).]).
+
+no
+| ?- append([tiny][tiny],[bubbles][bubbles],[What).What). What).
+
+What = [tiny,bubbles]
+
+yes
+| ?- append([dessert_topping][dessert_topping], Wha o, [dessert_topping, flor or_wax][dessert_topping, floor_wax])([dessert_topping], Who, [dessert_topping, floor_wax]).
+
+Who = [floor_wax]
+
+yes
+| ?- append(o One, Two, [apples, oranges, bananas][apples, oranges, bananas])(One, Two, [apples, oranges, bananas]).
+
+One = []
+Two = [apples,oranges,bananas] ? a
+
+One = [apples]
+Two = [oranges,bananas]
+
+One = [apples,oranges]
+Two = [bananas]
+
+One = [apples,oranges,bananas]
+Two = []
+
+no
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl concat_step_1.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl concat_step_1.pro[1P1.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- concatenate           ['concat_step1.pro']['concat_step1.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/concat_step1.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/concat_step1.pro compiled, 0 lines read - 368 bytes written, 8 ms
+
+yes
+| ?- concatenate([][],[harry][harry],[What][What]      What)([],[harry],What).
+
+What = [harry]
+
+yes
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prologsubl concat_step1.pro[1P.pro2.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['concat_step2.pro']['concat_step2.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/concat_step2.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/concat_step2.pro compiled, 1 lines read - 554 bytes written, 8 ms
+
+yes
+| ?- concatenate([malfoy][malfoy], [potter][potter], What)([malfoy], [potter], What).
+
+What = [malfoy,potter]
+
+yes
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prologsubl concat_step2.pro[1P.pro3.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl concat_step3.proprolog[K
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['concat_step3']['concat_step3'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/concat_step3.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/concat_step3.pro:4:32: syntax error: ] or operator expected in list
+	1 error(s)
+compilation failed
+
+no
+| ?- ['concat_step3'].                 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prologsubl concat_step3.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl concat_step3.proprolog[K
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['concat_step3.pro']['concat_step3.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/concat_step3.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/concat_step3.pro:4:32: syntax error: ] or operator expected in list
+	1 error(s)
+compilation failed
+
+no
+| ?- ['concat_step3.pro'].                     
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prologsubl concat_step3.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl concat_step3.proprolog[K
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['concat_step3']['concat_step3'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/concat_step3.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/concat_step3.pro compiled, 3 lines read - 1213 bytes written, 9 ms
+
+yes
+| ?- concatenate([malfoy, granger][malfoy, granger], [potter][potter], what)([malfoy, granger], [potter], what).hat). What).hat).
+
+What = [malfoy,granger,potter] ? 
+Action (; for next solution, a for all solutions, RET to stop) ? 
+
+yes
+| ?- 
+
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl concat.pro
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl concat.pro[9Pprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['concat.pro']['concat.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/concat.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/concat.pro compiled, 2 lines read - 587 bytes written, 9 ms
+
+yes
+| ?- concatenate([1,2][1,2],3 [3, ][3], What)([1,2],[3], What)
+.
+
+What = [1,2,3]
+
+yes
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl suddoko4.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- sudo oku([4,1,2,3,2,3,4,1,1,2,3,4,3,4,1,2][4,1,2,3,2,3,4,1,1,2,3,4,3,4,1,2], Sp olution)([4,1,2,3,2,3,4,1,1,2,3,4,3,4,1,2], Solution).
+uncaught exception: error(existence_error(procedure,sudoku/2),top_level/0)
+| ?- ['sudoku   doku4.pro']['suddoku4.pro'].
+uncaught exception: error(existence_error(source_sink,'suddoku4.pro'),consult/1)
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prologsubl suddoko4.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl suddoko4.pro [12Pprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['suddoku4.pro']['suddoku4.pro'].
+uncaught exception: error(existence_error(source_sink,'suddoku4.pro'),consult/1)
+| ?- ['suddoku4.pro'].                 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prologsubl suddoko4.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ subl suddoko4.pro [12Pprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['suddoko4.pro']['suddoko4.pro'].
+compiling /home/gattim/Source/Repos/CSC351/Lab4/src/suddoko4.pro for byte code...
+/home/gattim/Source/Repos/CSC351/Lab4/src/suddoko4.pro:1-8: warning: singleton variables [S11,S12,S13,S21,S22,S23,S31,S32,S33,S41,S42,S43,S14,S24,S34,S44] for sudoku/2
+/home/gattim/Source/Repos/CSC351/Lab4/src/suddoko4.pro compiled, 7 lines read - 1122 bytes written, 8 ms
+
+yes
+| ?- sudoku([1,2,3][1,2,3],Solution)([1,2,3],Solution).
+
+no
+| ?- sudoku([1,2,3],Solution).,],Solution).4],Solution).,],Solution).5],Solution).,],Solution).6],Solution).,],Solution).7],Solution).,],Solution).8],Solution).,],Solution).9],Solution).,],Solution).0],Solution).,],Solution).1],Solution).,],Solution).2],Solution).,],Solution).3],Solution).,],Solution).4],Solution).,],Solution).5],Solution).,],Solution).6],Solution).],Solution).
+
+no
+| ?- 
+
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ prologsubl suddoko4.pro 
+]0;gattim@Sonya: ~/Source/Repos/CSC351/Lab4/srcgattim@Sonya:~/Source/Repos/CSC351/Lab4/src$ w[Kexit
+exit
+
+Script done on Wed 18 Nov 2015 02:48:27 AM EST
