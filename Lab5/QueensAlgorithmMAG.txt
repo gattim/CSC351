@@ -1,0 +1,7 @@
+My algorithm:
+if:
+	el1 is diagnol to el2
+then:
+	unsafe
+else:
+	recursive call next board spot
