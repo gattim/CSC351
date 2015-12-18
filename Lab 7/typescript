@@ -1,0 +1,276 @@
+Script started on Fri 18 Dec 2015 05:15:12 AM EST
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ scala
+Welcome to Scala version 2.11.6 (OpenJDK 64-Bit Server VM, Java 1.7.0_91).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> println("Hello [22G[K, surreal world")
+Hello, surreal world
+
+scala> (1).+(1)
+res1: Int = 2
+
+scala> 5 + 4 * 3
+res2: Int = 17
+
+scala> 5.+(4[12G[K([12G[K4.*(3))
+res3: Int = 17
+
+scala> (5).+((4).*(3))
+res4: Int = 17
+
+scala> :[8G[K"abc".size
+res5: Int = 3
+
+scala> "abc"+4
+res6: String = abc4
+
+scala> 4+"abc"
+res7: String = 4abc
+
+scala> 4+"1.0"
+res8: String = 41.0
+
+scala> 4 * "abc"
+<console>:8: error: overloaded method value * with alternatives:
+  (x: Double)Double <and>
+  (x: Float)Float <and>
+  (x: Long)Long <and>
+  (x: Int)Int <and>
+  (x: Char)Int <and>
+  (x: Short)Int <and>
+  (x: Byte)Int
+ cannot be applied to (String)
+              4 * "abc"
+                ^
+
+scala> 5 < 6
+res10: Boolean = true
+
+scala> 5 <= 6
+res11: Boolean = true
+
+scala> 5 <= 2
+res12: Boolean = false
+
+scala> 5 >= 2
+res13: Boolean = true
+
+scala> f ![10G[K[9G[K[8G[K5 != 2
+res14: Boolean = true
+
+scala> val a = 1
+a: Int = 1
+
+scala> val b = 2
+b: Int = 2
+
+scala> if (b < a) {
+     | 
+$intp                            Equiv                       Iterator                 NumberFormatException   Stream                            actors         io             res0    res5      toString   
+::                               Error                       Lab1                     Numeric                 StringBuilder                     annotation     isInstanceOf   res1    res6      tools      
+AbstractMethodError              Exception                   Lab2                     Ordered                 StringIndexOutOfBoundsException   asInstanceOf   java           res10   res7      util       
+AnyRef                           Fractional                  Lab3                     Ordering                Throwable                         b              javax          res11   res8      xml        
+ArrayIndexOutOfBoundsException   IllegalArgumentException    Lab4                     PartialOrdering         Traversable                       beans          jdk            res12   runtime              
+BigDecimal                       IndexOutOfBoundsException   Lab5                     PartiallyOrdered        TraversableOnce                   classOf        jline          res13   scala                
+BigInt                           IndexedSeq                  Left                     Range                   UnsupportedOperationException     collection     math           res14   sun                  
+BufferedIterator                 Integral                    List                     Right                   Vector                            com            org            res2    sunw                 
+ClassCastException               InterruptedException        NoSuchElementException   RuntimeException        _root_                            compat         ref            res3    sys                  
+Either                           Iterable                    NullPointerException     Seq                     a                                 concurrent     reflect        res4    text                 
+     |   println("true"
+     | } else {
+<console>:3: error: ')' expected but '}' found.
+       } else {
+       ^
+
+scala> )
+<console>:1: error: illegal start of definition
+       )
+       ^
+
+scala> exit
+<console>:8: error: not found: value exit
+              exit
+              ^
+
+scala> quit
+<console>:8: error: not found: value quit
+              quit
+              ^
+
+scala> ]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ scala
+Welcome to Scala version 2.11.6 (OpenJDK 64-Bit Server VM, Java 1.7.0_91).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> if (b < a[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[Ka = 1
+<console>:10: error: not found: value a
+val $ires0 = a
+             ^
+<console>:7: error: not found: value a
+       a = 1
+       ^
+
+scala> b = 2[12G[K[11G[K[10G[K[9G[K[8G[Ka = 1[12G[11G[10G[9G[8Gva = 1[9Gaa = 1[10Gla = 1[11G a = 1[12G[17G
+a: Int = 1
+
+scala> val a = 1[16G[15G[14G[13G[12G = 1[K[12Gb = 1[13G[14G[15G[16G[17G[16G[K2
+b: Int = 2
+
+scala> if ( [12G[Kb < a) {
+     |   println("true")
+     | } else {
+     |   println("false")
+     | }
+false
+
+scala> Nil
+res1: scala.collection.immutable.Nil.type = List()
+
+scala> if(0) {println("true")}
+<console>:8: error: type mismatch;
+ found   : Int(0)
+ required: Boolean
+              if(0) {println("true")}
+                 ^
+
+scala> if(0) {println("true")}[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G) {println("true")}[K[11GN) {println("true")}[12Gi) {println("true")}[13Gl) {println("true")}[14G[33G
+<console>:8: error: type mismatch;
+ found   : scala.collection.immutable.Nil.type
+ required: Boolean
+              if(Nil) {println("true")}
+                 ^
+
+scala> ]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ emacs sca[K[K[Kwhile.scala
+The program 'emacs' can be found in the following packages:
+ * emacs24
+ * emacs24-nox
+ * e3
+ * emacs24-lucid
+ * jove
+Try: sudo apt-get install <selected package>
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ vim while.scal[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksubl while.scala
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ subl while.scala[1@emacs[C[C[C[C[C[C[C[C[C[C[C[Cscala[Ksh gattim@grendelcala[Kemacs while.scala[1Psubl[C[C[C[C[C[C[C[C[C[C[C[C[Ksubl while.scala
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ scala while.scala
+/home/gattim/Source/Repos/CSC351/while.scala:3: error: ')' expected but '<-' found.
+	while (i <- 3) {
+                 ^
+/home/gattim/Source/Repos/CSC351/while.scala:7: error: illegal start of simple expression
+}
+^
+two errors found
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ scala while.scala[1Publ[C[C[C[C[C[C[C[C[C[C[C[C
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ subl while.scala[1@cala[C[C[C[C[C[C[C[C[C[C[C[C
+1
+2
+3
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ subl for_loop.scala
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ subl for_loop.scala[2Pcala while.scala[1P.scala[1P.scala[1P.scala[1P.scala[1P.scalaf.scalaor_loop.scala.scala[1Pscala[1Pcala[1Pala[1Pla[1Pa[K
+for loop using Java-style iteration
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ scala for_loop.scala its all in the grind
+for loop using Java-style iteration
+its
+all
+in
+the
+grind
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ scala for_loop.scala its all in the grind[K[1Publ[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crfor_loop.scalaufor_loop.scalabfor_loop.scalayfor_loop.scala_for_loop.scala
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ subl ruby_for_loop.scalacala for_loop.scala its all in the grind[1@r[1@u[1@b[1@t[1P[1@y[1@_
+for loop using Ruby-style interation
+its
+all
+in
+the
+grind
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ scala
+Welcome to Scala version 2.11.6 (OpenJDK 64-Bit Server VM, Java 1.7.0_91).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> val range = 0 until 10
+range: scala.collection.immutable.Range = Range(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+scala> range.start
+res0: Int = 0
+
+scala> range.end
+res1: Int = 10
+
+scala> range.step
+res2: Int = 1
+
+scala> (0 to 10) by 5
+res3: scala.collection.immutable.Range = Range(0, 5, 10)
+
+scala> 0[8G[K(0 to 10) by 6
+res4: scala.collection.immutable.Range = Range(0, 6)
+
+scala> (0 until 10 by 5)
+res5: scala.collection.immutable.Range = Range(0, 5)
+
+scala> val range = (10 until 0) by -1
+range: scala.collection.immutable.Range = Range(10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+
+scala> val range = (10 until 0)
+range: scala.collection.immutable.Range = Range()
+
+scala> val range = (10 until 0)[31G[30G10)[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[22G[21G0 until 10)[K[21G[32G
+range: scala.collection.immutable.Range = Range(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+scala> val rnage = (0 to 10)[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[Kange = 'a' to 'e'
+range: scala.collection.immutable.NumericRange.Inclusive[Char] = NumericRange(a, b, c, d, e)
+
+scala> val person = ("e[23G[KElvis", "Presley")
+person: (String, String) = (Elvis,Presley)
+
+scala> person._1
+res6: String = Elvis
+
+scala> person._2
+res7: String = Presley
+
+scala> person._3
+<console>:9: error: value _3 is not a member of (String, String)
+              person._3
+                     ^
+
+scala> val (x,y) - (1,2)
+     | )
+<console>:2: error: '=' expected but ')' found.
+       )
+       ^
+
+scala> )[8G[Kval (x,y) - (1,2)[24G[23G[22G[21G[20G[19G[18G (1,2)[K[18G- (1,2)[19G[18G (1,2)[K[18G= (1,2)[19G[25G
+x: Int = 1
+y: Int = 2
+
+scala> val (x,y) = (1,2)[24G,)[25G3)[26G[27G
+<console>:9: error: constructor cannot be instantiated to expected type;
+ found   : (T1, T2)
+ required: (Int, Int, Int)
+       val (x,y) = (1,2,3)
+           ^
+
+scala> class Person(firstName: String, lastName:S[49G[K String)
+defined class Person
+
+scala> val gump = new Person("Forrest", "Gump")
+gump: Person = Person@72c8f485
+
+scala> ]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ subl compass.scala
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ u[Kscala compass.scala 
+Initial bearing: north
+Turning right. Now bearing east
+Turning right. Now bearing south
+Turning left. Now bearing north
+Turning left. Now bearing west
+Turning left. Now bearing south
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ sublk[K constructor.c[Kscala
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ subl constructor.scala[2Pcala compass.scala [1P[1P[1P[1P[1P[1@n[1@s[1@t[1@r[1@u[1@c[1@t[1@o[1@r
+Outer constructor
+Outer constructor
+Inner constructor
+]0;gattim@Sonmi: ~/Source/Repos/CSC351[01;32mgattim@Sonmi[00m:[01;34m~/Source/Repos/CSC351[00m$ exit [K
+exit
+
+Script done on Fri 18 Dec 2015 05:51:37 AM EST
